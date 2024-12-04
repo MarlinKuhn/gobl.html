@@ -40,16 +40,6 @@ func prepareLineSupport(inv *bill.Invoice) *lineSupport {
 			}
 		}
 	}
-	for _, row := range inv.Discounts {
-		if row.Ref != "" {
-			ls.refs = true
-		}
-	}
-	for _, row := range inv.Charges {
-		if row.Ref != "" {
-			ls.refs = true
-		}
-	}
 
 	ls.categories = cats
 

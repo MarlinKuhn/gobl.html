@@ -52,7 +52,7 @@ func buildAddressLines(addr *org.Address) []string {
 		lines = append(lines, addr.Region)
 	}
 	if addr.Code != "" {
-		lines = append(lines, addr.Code)
+		lines = append(lines,  string(addr.Code))
 	}
 	return lines
 }

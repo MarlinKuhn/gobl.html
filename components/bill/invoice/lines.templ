@@ -189,15 +189,6 @@ templ discountRow(row *bill.Discount, ls *lineSupport) {
 		<td class="i">
 			{ fmt.Sprintf("D%d", row.Index) }
 		</td>
-		if ls.refs {
-			<td class="ref">
-				if row.Ref != "" {
-					{ row.Ref }
-				} else {
-					<!-- empty -->
-				}
-			</td>
-		}
 		<td class="reason">
 			{ row.Reason }
 		</td>
@@ -260,15 +251,6 @@ templ chargeRow(row *bill.Charge, ls *lineSupport) {
 		<td class="ref">
 			{ fmt.Sprintf("C%d", row.Index) }
 		</td>
-		if ls.refs {
-			<td class="ref">
-				if row.Ref != "" {
-					{ row.Ref }
-				} else {
-					<!-- empty -->
-				}
-			</td>
-		}
 		<td class="reason">
 			{ row.Reason }
 		</td>
