@@ -1,9 +1,11 @@
 module github.com/invopop/gobl.html
 
-go 1.22.1
+go 1.23
+
+toolchain go1.23.2
 
 require (
-	github.com/a-h/templ v0.2.793
+	github.com/a-h/templ v0.3.833
 	github.com/go-resty/resty/v2 v2.12.0
 	github.com/invopop/ctxi18n v0.9.0
 	github.com/invopop/gobl v0.208.0

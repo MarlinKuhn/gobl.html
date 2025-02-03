@@ -23,6 +23,7 @@ el:
         order_period: "Περίοδος"
         order_period_label: "%{label}"
         order_period_range: "%{start} έως %{end}"
+        purchase_order: "αριθμός παραγγελίας"
         ext_map:
           mx-cfdi-issue-place: "Τόπος Έκδοσης"
 

@@ -23,6 +23,7 @@ pl:
         order_period: "Okres"
         order_period_label: "%{label}"
         order_period_range: "%{start} do %{end}"
+        purchase_order: "Numer zamówienia"
 
       supplier:
         title: "Dostawca"

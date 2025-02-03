@@ -24,6 +24,7 @@ en:
         order_period: "Period"
         order_period_label: "%{label}"
         order_period_range: "%{start} to %{end}"
+        purchase_order: "Order Number"
         ext_map:
           mx-cfdi-issue-place: "Place of Issue"
 

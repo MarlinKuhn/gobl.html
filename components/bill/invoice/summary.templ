@@ -122,6 +122,16 @@ templ summaryOrderingRows(inv *bill.Invoice) {
 			</li>
 		}
 	}
+	for _, purchase := range inv.Ordering.Purchases {
+		<li class="purchase-order">
+			<span class="label">
+				@t.T(".purchase_order")
+			</span>
+			<span class="value">
+				{ purchase.Code.String() }
+			</span>
+		</li>
+	}
 }
 
 templ summaryOrderPeriodRows(p *cal.Period) {

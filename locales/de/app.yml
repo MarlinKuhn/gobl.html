@@ -24,6 +24,7 @@ de:
         order_period: "Zeitraum"
         order_period_label: "%{label}"
         order_period_range: "%{start} bis %{end}"
+        purchase_order: "Auftragsnummer"
 
       supplier:
         title: "Lieferant"
