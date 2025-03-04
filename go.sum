@@ -1,5 +1,7 @@
 cloud.google.com/go v0.118.0 h1:tvZe1mgqRxpiVa3XlIGMiPcEUbP1gNXELgD4y/IXmeQ=
 cloud.google.com/go v0.118.0/go.mod h1:zIt2pkedt/mo+DQjcT4/L3NDxzHPR29j5HcclNH+9PM=
+github.com/LastPossum/kamino v0.0.2 h1:Zry5lS7x7TTU1hzzk3Utnp+rX8kk/wWhuW52Ha9As+U=
+github.com/LastPossum/kamino v0.0.2/go.mod h1:H8Qm+6DGeNOoXk9hHIOEAQWS9nbo0YwK32pC/7REsOE=
 github.com/Masterminds/semver/v3 v3.3.1 h1:QtNSWtVZ3nBfk8mAOu/B6v7FMJ+NHTIgUPi7rj+4nv4=
 github.com/Masterminds/semver/v3 v3.3.1/go.mod h1:4V+yj/TJE1HU9XfppCwVMZq3I84lprf4nC11bSS5beM=
 github.com/a-h/templ v0.3.833 h1:L/KOk/0VvVTBegtE0fp2RJQiBm7/52Zxv5fqlEHiQUU=
@@ -26,8 +28,8 @@ github.com/inconshreveable/mousetrap v1.1.0 h1:wN+x4NVGpMsO7ErUn/mUI3vEoE6Jt13X2
 github.com/inconshreveable/mousetrap v1.1.0/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=
 github.com/invopop/ctxi18n v0.9.0 h1:BIia4u4OngaHVn/7gvK0w6lccOXVtad8xU0KgJ+mnVA=
 github.com/invopop/ctxi18n v0.9.0/go.mod h1:1Osw+JGYA+anHt0Z4reF36r5FtGHYjGQ+m1X7keIhPc=
-github.com/invopop/gobl v0.208.0 h1:qy5GHXELMy7qBtvgLL8m4d/aBgBaxq0bdAaae4a2luE=
-github.com/invopop/gobl v0.208.0/go.mod h1:DmPohPel8b3ta4nDKnXRNzWQlB89cN74e0/WwPUEZUU=
+github.com/invopop/gobl v0.211.2-0.20250304122918-a187e1434b3f h1:2vcLHSn4QZCeQv5M/qhasK/G5JHDRvJZBYQeKrdI3VA=
+github.com/invopop/gobl v0.211.2-0.20250304122918-a187e1434b3f/go.mod h1:nmdXqByFw1fOqs8kp4OpFTiLEwtNOrIKvbnmJB0PZvQ=
 github.com/invopop/jsonschema v0.13.0 h1:KvpoAJWEjR3uD9Kbm2HWJmqsEaHt8lBUpd0qHcIi21E=
 github.com/invopop/jsonschema v0.13.0/go.mod h1:ffZ5Km5SWWRAIN6wbDXItl95euhFz2uON45H2qjYt+0=
 github.com/invopop/princepdf v0.0.0-20240408123340-585be3cab91a h1:xt18LlIfizLkFgLi+vK/m2SWOsAbQwVwQgbkzxKY0eU=

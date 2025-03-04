@@ -87,7 +87,7 @@ templ line(_ *bill.Invoice, l *bill.Line, ls *lineSupport) {
 		if ls.refs {
 			<td class="ref">
 				if l.Item.Ref != "" {
-					{ l.Item.Ref }
+					{ string(l.Item.Ref) }
 				} else {
 					<!-- empty -->
 				}
@@ -115,7 +115,7 @@ templ line(_ *bill.Invoice, l *bill.Line, ls *lineSupport) {
 			</td>
 		}
 		<td class="price">
-			@t.LM(l.Item.Price)
+			@t.LM(*l.Item.Price)
 			@lineItemAltPrices(l)
 		</td>
 		for _, cat := range ls.categories {
@@ -142,7 +142,7 @@ templ line(_ *bill.Invoice, l *bill.Line, ls *lineSupport) {
 			</td>
 		}
 		<td class="total">
-			@t.LM(l.Total)
+			@t.LM(*l.Total)
 		</td>
 	</tr>
 }

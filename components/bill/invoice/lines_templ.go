@@ -327,9 +327,9 @@ func line(_ *bill.Invoice, l *bill.Line, ls *lineSupport) templ.Component {
 			}
 			if l.Item.Ref != "" {
 				var templ_7745c5c3_Var8 string
-				templ_7745c5c3_Var8, templ_7745c5c3_Err = templ.JoinStringErrs(l.Item.Ref)
+				templ_7745c5c3_Var8, templ_7745c5c3_Err = templ.JoinStringErrs(string(l.Item.Ref))
 				if templ_7745c5c3_Err != nil {
-					return templ.Error{Err: templ_7745c5c3_Err, FileName: `components/bill/invoice/lines.templ`, Line: 90, Col: 17}
+					return templ.Error{Err: templ_7745c5c3_Err, FileName: `components/bill/invoice/lines.templ`, Line: 90, Col: 25}
 				}
 				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var8))
 				if templ_7745c5c3_Err != nil {
@@ -432,7 +432,7 @@ func line(_ *bill.Invoice, l *bill.Line, ls *lineSupport) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = t.LM(l.Item.Price).Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = t.LM(*l.Item.Price).Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -504,7 +504,7 @@ func line(_ *bill.Invoice, l *bill.Line, ls *lineSupport) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = t.LM(l.Total).Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = t.LM(*l.Total).Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
